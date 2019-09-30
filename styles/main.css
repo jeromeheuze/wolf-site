@@ -1,3 +1,116 @@
+/* ----------------------------------------------------------------------------------------------------
+
+Super Form Reset
+
+A couple of things to watch out for:
+
+- IE8: If a text input doesn't have padding on all sides or none the text won't be centered.
+- The default border sizes on text inputs in all UAs seem to be slightly different. You're better off using custom borders.
+- You NEED to set the font-size and family on all form elements
+- Search inputs need to have their appearance reset and the box-sizing set to content-box to match other UAs
+- You can style the upload button in webkit using ::-webkit-file-upload-button
+- ::-webkit-file-upload-button selectors can't be used in the same selector as normal ones. FF and IE freak out.
+- IE: You don't need to fake inline-block with labels and form controls in IE. They function as inline-block.
+- By turning off ::-webkit-search-decoration, it removes the extra whitespace on the left on search inputs
+
+----------------------------------------------------------------------------------------------------*/
+input,
+label,
+select,
+button,
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  /* Browsers have different default form fonts */
+  font-size: 1em;
+  font-family: 'IBM Plex Sans', sans-serif; }
+
+/* Remove the stupid outer glow in Webkit */
+input:focus {
+  outline: 0; }
+
+/* Box Sizing Reset
+-----------------------------------------------*/
+/* All of our custom controls should be what we expect them to be */
+input,
+textarea {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* These elements are usually rendered a certain way by the browser */
+button,
+input[type=reset],
+input[type=button],
+input[type=submit],
+input[type=checkbox],
+input[type=radio],
+select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Text Inputs
+-----------------------------------------------*/
+/* Button Controls
+-----------------------------------------------*/
+input[type=checkbox],
+input[type=radio] {
+  width: 13px;
+  height: 13px; }
+
+/* File Uploads
+-----------------------------------------------*/
+/* Search Input
+-----------------------------------------------*/
+/* Make webkit render the search input like a normal text field */
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box; }
+
+/* Turn off the recent search for webkit. It adds about 15px padding on the left */
+::-webkit-search-decoration {
+  display: none; }
+
+/* Buttons
+-----------------------------------------------*/
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"] {
+  /* Fix IE7 display bug */
+  overflow: visible;
+  width: auto; }
+
+/* IE8 and FF freak out if this rule is within another selector */
+::-webkit-file-upload-button {
+  padding: 0;
+  border: 0;
+  background: none; }
+
+/* Textarea
+-----------------------------------------------*/
+textarea {
+  /* Move the label to the top */
+  vertical-align: top;
+  /* Turn off scroll bars in IE unless needed */
+  overflow: auto; }
+
+/* Selects
+-----------------------------------------------*/
+select[multiple] {
+  /* Move the label to the top */
+  vertical-align: top; }
+
+* {
+  box-sizing: border-box; }
+
 html, body {
   background-color: #fff;
   color: #2a2a2a;
@@ -18,11 +131,231 @@ header {
       padding: 0; }
       header .menu ul li {
         display: inline-block;
-        margin-right: 7px; }
+        margin-right: 1em; }
         header .menu ul li:last-child {
           margin-right: 0; }
         header .menu ul li a {
           color: #fff;
-          text-decoration: none; }
+          text-decoration: none;
+          font-size: 1em; }
+          @media screen and (min-width: 414px) {
+            header .menu ul li a {
+              font-size: 0.8em; } }
   header .logo {
-    margin-top: 15px; }
+    margin: 0 auto;
+    max-height: 60px; }
+
+.banner {
+  width: 100%;
+  height: 40em; }
+  .banner.format-jpg {
+    background: url("../img/jo-jo-Eg5eootTvqM-unsplash.jpg") center center no-repeat;
+    background-size: cover; }
+  .banner.format-webp {
+    background: url("../img/jo-jo-Eg5eootTvqM-unsplash.webp") center center no-repeat;
+    background-size: cover; }
+  .banner .shield {
+    width: 138px;
+    height: 116px;
+    background: url("../img/shield-wolf.png") center center no-repeat;
+    background-size: cover;
+    margin: 20px auto; }
+  .banner .title h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 3rem;
+    text-shadow: 2px 2px 7px rgba(150, 150, 150, 0.78); }
+    .banner .title h1 span {
+      font-weight: 100; }
+
+main section .container-fluid.no-padding {
+  padding: 0; }
+
+main section .container-fluid .row {
+  margin: 0; }
+  main section .container-fluid .row .no-padding {
+    padding: 0; }
+
+main section.m1 .m1detail .content {
+  padding: 10rem; }
+  main section.m1 .m1detail .content h2 {
+    text-align: center;
+    text-transform: uppercase; }
+  main section.m1 .m1detail .content .phone {
+    height: 19em;
+    width: 100%; }
+    main section.m1 .m1detail .content .phone.format-jpg {
+      background: url("../img/iphone_iphonexspacegrey_portrait.png") center center no-repeat;
+      background-size: contain; }
+    main section.m1 .m1detail .content .phone.format-webp {
+      background: url("../img/iphone_iphonexspacegrey_portrait.webp") center center no-repeat;
+      background-size: contain; }
+
+main section.m1 .grid2x2 {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+  main section.m1 .grid2x2 > div {
+    display: flex;
+    flex-basis: calc(50% - 40px);
+    justify-content: center;
+    flex-direction: column; }
+  main section.m1 .grid2x2 > div > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; }
+  main section.m1 .grid2x2 .quad {
+    min-height: 20em;
+    min-width: 50%; }
+    main section.m1 .grid2x2 .quad.imgm1.format-jpg {
+      background: url("../img/marek-szturc-8Ou3EZmTMWA-unsplash.jpg") center center no-repeat;
+      background-size: cover; }
+    main section.m1 .grid2x2 .quad.imgm1.format-webp {
+      background: url("../img/marek-szturc-8Ou3EZmTMWA-unsplash.webp") center center no-repeat;
+      background-size: cover; }
+    main section.m1 .grid2x2 .quad.imgm2.format-jpg {
+      background: url("../img/hybrid-HtHrjExpddA-unsplash.jpg") center center no-repeat;
+      background-size: cover; }
+    main section.m1 .grid2x2 .quad.imgm2.format-webp {
+      background: url("../img/hybrid-HtHrjExpddA-unsplash.webp") center center no-repeat;
+      background-size: cover; }
+    main section.m1 .grid2x2 .quad.imgm3.format-jpg {
+      background: url("../img/simon-rae-jY_2XG-6HU0-unsplash.jpg") center center no-repeat;
+      background-size: cover; }
+    main section.m1 .grid2x2 .quad.imgm3.format-webp {
+      background: url("../img/simon-rae-jY_2XG-6HU0-unsplash.webp") center center no-repeat;
+      background-size: cover; }
+    main section.m1 .grid2x2 .quad.imgm4.format-jpg {
+      background: url("../img/aron-visuals-4zxSWESyZio-unsplash.jpg") center center no-repeat;
+      background-size: cover; }
+    main section.m1 .grid2x2 .quad.imgm4.format-webp {
+      background: url("../img/aron-visuals-4zxSWESyZio-unsplash.webp") center center no-repeat;
+      background-size: cover; }
+
+main section.m2 .m2detail .content {
+  padding: 10rem; }
+  main section.m2 .m2detail .content h2 {
+    text-align: center;
+    text-transform: uppercase; }
+
+main section.m2 .m2pic .single {
+  min-height: 100%;
+  min-width: 100%; }
+
+main section.m2 .m2pic .simgm1.format-jpg {
+  background: url("../img/alina-lobanova-TjMt-AdMMIM-unsplash.jpg") center center no-repeat;
+  background-size: cover; }
+
+main section.m2 .m2pic .simgm1.format-webp {
+  background: url("../img/alina-lobanova-TjMt-AdMMIM-unsplash.webp") center center no-repeat;
+  background-size: cover; }
+
+main section.m3 .m3detail {
+  background-color: #2a2a2a;
+  color: #ffffff; }
+  main section.m3 .m3detail .content {
+    padding: 10rem; }
+    main section.m3 .m3detail .content h2 {
+      text-align: center;
+      text-transform: uppercase; }
+
+main section.m3 .m3pic .single {
+  min-height: 100%;
+  min-width: 100%; }
+
+main section.m3 .m3pic .simgm1.format-jpg {
+  background: url("../img/eva-blue-e9hbo4NtKJ0-unsplash.jpg") 0 0 no-repeat;
+  background-size: cover; }
+
+main section.m3 .m3pic .simgm1.format-webp {
+  background: url("../img/eva-blue-e9hbo4NtKJ0-unsplash.webp") 0 0 no-repeat;
+  background-size: cover; }
+
+main section.m4 .m4detail .content {
+  padding: 10rem; }
+  main section.m4 .m4detail .content h2 {
+    text-align: center;
+    text-transform: uppercase; }
+  main section.m4 .m4detail .content form .fields {
+    padding: 20px 0; }
+    main section.m4 .m4detail .content form .fields label {
+      display: block;
+      font-size: 0.8em;
+      font-weight: 100; }
+    main section.m4 .m4detail .content form .fields input, main section.m4 .m4detail .content form .fields textarea {
+      margin: 10px 0;
+      padding: 10px 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%; }
+  main section.m4 .m4detail .content form .action {
+    padding: 20px 0; }
+    main section.m4 .m4detail .content form .action button {
+      border-radius: 4px;
+      padding: 10px 5px;
+      border: 1px dashed #353535;
+      cursor: pointer; }
+      main section.m4 .m4detail .content form .action button:hover, main section.m4 .m4detail .content form .action button.active {
+        background-color: #eaeaea; }
+
+footer {
+  padding: 10rem 0 4rem 0;
+  background-color: #353535;
+  color: #fff; }
+  footer .container-fluid.no-padding {
+    padding: 0; }
+  footer .container-fluid .row {
+    margin: 0; }
+    footer .container-fluid .row .no-padding {
+      padding: 0; }
+  footer .shield {
+    width: 138px;
+    height: 116px;
+    background: url("../img/shield-wolf.png") center center no-repeat;
+    background-size: cover;
+    margin: 0 auto; }
+  footer hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    margin: 5em 0 5em 0; }
+  footer h3 {
+    margin-top: 0;
+    padding-top: 0; }
+  footer a {
+    color: #fff;
+    text-decoration: none; }
+  footer address {
+    color: #bbbbbb; }
+  footer .madeby {
+    text-align: center; }
+    footer .madeby .smaller {
+      font-size: 0.7em; }
+    footer .madeby .secondary {
+      margin-top: 12px;
+      color: rgba(255, 255, 255, 0.5); }
+    footer .madeby a {
+      font-weight: 100; }
+  footer .howls {
+    font-size: 0.8em;
+    position: relative;
+    margin-bottom: 20px;
+    clear: both; }
+    footer .howls .howls-icon {
+      width: 40px;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    footer .howls .howls-content {
+      width: 90%;
+      padding-left: 48px;
+      color: #888; }
+      footer .howls .howls-content p {
+        margin-bottom: 0.4em; }
+      footer .howls .howls-content .author {
+        color: #888; }
+      footer .howls .howls-content .quotes {
+        color: #bbbbbb; }
+      footer .howls .howls-content small {
+        color: #888; }
