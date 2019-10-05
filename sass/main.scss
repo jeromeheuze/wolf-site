@@ -1,5 +1,4 @@
 @import "mediaqueries";
-@import "mixins";
 @import "resetform";
 * {
   box-sizing: border-box;
@@ -55,6 +54,17 @@ header {
     background: url("../img/jo-jo-Eg5eootTvqM-unsplash.webp") center center no-repeat;
     background-size: cover;
   }
+  .container-fluid {
+    z-index: 10;
+    position: relative;
+  }
+  .overlay {
+    width: 100%;
+    height: 40em;
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.35);
+  }
 
   .shield {
     width: 138px;
@@ -75,9 +85,21 @@ header {
       }
     }
   }
+  .subtitle {
+    p {
+      color: #fff;
+      text-align: center;
+      font-weight: 400;
+      text-shadow: 2px 2px 7px rgba(150, 150, 150, 0.78);
+    }
+  }
 }
 main {
   section {
+    .disclaimer {
+      font-weight: 400;
+      font-size: 0.8em;
+    }
     .container-fluid {
       &.no-padding {
         padding: 0;
@@ -92,7 +114,19 @@ main {
     &.m1 {
       .m1detail {
         .content {
-          padding: 10rem;
+          padding: 2rem;
+          @media (min-width: #{$screen-sm-min}) {
+            padding: 2.5rem;
+          }
+          @media (min-width: #{$screen-md-min}) {
+            padding: 5rem;
+          }
+          @media (min-width: #{$screen-lg-min}) {
+            padding: 5rem;
+          }
+          @media (min-width: #{$screen-xl-min}) {
+            padding: 10rem;
+          }
           h2 {
             text-align: center;
             text-transform: uppercase;
@@ -128,8 +162,24 @@ main {
           flex-direction: row;
         }
         .quad {
-          min-height: 20em;
-          min-width: 50%;
+          min-height: 13em;
+          min-width: 100%;
+          @media (min-width: #{$screen-sm-min}) {
+            min-height: 13em;
+            min-width: 100%;
+          }
+          @media (min-width: #{$screen-md-min}) {
+            min-height: 13em;
+            min-width: 100%;
+          }
+          @media (min-width: #{$screen-lg-min}) {
+            min-height: 13em;
+            min-width: 100%;
+          }
+          @media (min-width: #{$screen-xl-min}) {
+            min-height: 20em;
+            min-width: 50%;
+          }
           &.imgm1 {
             &.format-jpg {
               background: url("../img/marek-szturc-8Ou3EZmTMWA-unsplash.jpg") center center no-repeat;
@@ -141,6 +191,19 @@ main {
             }
           }
           &.imgm2 {
+            display: none;
+            @media (min-width: #{$screen-sm-min}) {
+              display: none;
+            }
+            @media (min-width: #{$screen-md-min}) {
+              display: none;
+            }
+            @media (min-width: #{$screen-lg-min}) {
+              display: block;
+            }
+            @media (min-width: #{$screen-xl-min}) {
+              display: block;
+            }
             &.format-jpg {
               background: url("../img/hybrid-HtHrjExpddA-unsplash.jpg") center center no-repeat;
               background-size: cover;
@@ -176,7 +239,19 @@ main {
     &.m2 {
       .m2detail {
         .content {
-          padding: 10rem;
+          padding: 2rem;
+          @media (min-width: #{$screen-sm-min}) {
+            padding: 2.5rem;
+          }
+          @media (min-width: #{$screen-md-min}) {
+            padding: 5rem;
+          }
+          @media (min-width: #{$screen-lg-min}) {
+            padding: 5rem;
+          }
+          @media (min-width: #{$screen-xl-min}) {
+            padding: 10rem;
+          }
           h2 {
             text-align: center;
             text-transform: uppercase;
@@ -205,7 +280,19 @@ main {
         background-color: #2a2a2a;
         color: #ffffff;
         .content {
-          padding: 10rem;
+          padding: 2rem;
+          @media (min-width: #{$screen-sm-min}) {
+            padding: 2.5rem;
+          }
+          @media (min-width: #{$screen-md-min}) {
+            padding: 5rem;
+          }
+          @media (min-width: #{$screen-lg-min}) {
+            padding: 5rem;
+          }
+          @media (min-width: #{$screen-xl-min}) {
+            padding: 10rem;
+          }
           h2 {
             text-align: center;
             text-transform: uppercase;
@@ -218,6 +305,19 @@ main {
           min-width: 100%;
         }
         .simgm1 {
+          display: none;
+          @media (min-width: #{$screen-sm-min}) {
+            display: none;
+          }
+          @media (min-width: #{$screen-md-min}) {
+            display: block;
+          }
+          @media (min-width: #{$screen-lg-min}) {
+            display: block;
+          }
+          @media (min-width: #{$screen-xl-min}) {
+            display: block;
+          }
           &.format-jpg {
             background: url("../img/eva-blue-e9hbo4NtKJ0-unsplash.jpg") 0 0 no-repeat;
             background-size: cover;
@@ -230,13 +330,27 @@ main {
       }
     }
     &.m4 {
-
       .m4detail {
         .content {
-          padding: 10rem;
+          padding: 2rem;
+          @media (min-width: #{$screen-sm-min}) {
+            padding: 2.5rem;
+          }
+          @media (min-width: #{$screen-md-min}) {
+            padding: 5rem;
+          }
+          @media (min-width: #{$screen-lg-min}) {
+            padding: 5rem;
+          }
+          @media (min-width: #{$screen-xl-min}) {
+            padding: 10rem;
+          }
           h2 {
             text-align: center;
             text-transform: uppercase;
+            @media (max-width: #{$screen-md-min}) {
+              margin-top: 0;
+            }
           }
           form {
             .fields {
@@ -270,7 +384,6 @@ main {
           }
         }
       }
-
     }
   }
 }
@@ -293,7 +406,19 @@ footer {
     background-size: cover;
     margin: 0 auto;
   }
-  padding: 10rem 0 4rem 0;
+  padding: 4rem 0;
+  @media (min-width: #{$screen-sm-min}) {
+    padding: 4rem 0;
+  }
+  @media (min-width: #{$screen-md-min}) {
+    padding: 4rem 0;
+  }
+  @media (min-width: #{$screen-lg-min}) {
+    padding: 4rem 0;
+  }
+  @media (min-width: #{$screen-xl-min}) {
+    padding: 10rem 0 4rem 0;
+  }
   background-color: #353535;
   color: #fff;
   hr {
@@ -309,6 +434,56 @@ footer {
   a {
     color: #fff;
     text-decoration: none;
+  }
+  .contact-cont {
+    @media (min-width: #{$screen-sm-min}) {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    @media (min-width: #{$screen-md-min}) {
+      text-align: center;
+      margin-top: 4rem;
+    }
+    @media (min-width: #{$screen-lg-min}) {
+      text-align: center;
+      margin-top: 4rem;
+    }
+    @media (min-width: #{$screen-xl-min}) {
+      text-align: left;
+      margin-top: 0;
+    }
+  }
+  .howls-cont {
+    @media (min-width: #{$screen-sm-min}) {
+      text-align: left;
+      margin: 2rem 15rem 1rem;
+    }
+    @media (min-width: #{$screen-md-min}) {
+      text-align: left;
+      margin: 4rem 15rem 1rem;
+    }
+    @media (min-width: #{$screen-lg-min}) {
+      text-align: left;
+      margin: 4rem 15rem 1rem;
+    }
+    @media (min-width: #{$screen-xl-min}) {
+      text-align: left;
+      margin: 0;
+    }
+    h3 {
+      @media (min-width: #{$screen-sm-min}) {
+        text-align: center;
+      }
+      @media (min-width: #{$screen-md-min}) {
+        text-align: center;
+      }
+      @media (min-width: #{$screen-lg-min}) {
+        text-align: center;
+      }
+      @media (min-width: #{$screen-xl-min}) {
+        text-align: left;
+      }
+    }
   }
   address {
     color: #bbbbbb;

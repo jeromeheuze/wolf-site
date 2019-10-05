@@ -49,11 +49,13 @@ if( strpos( $_SERVER['HTTP_ACCEPT'], 'image/webp' ) !== false ) {
     </div>
 </header>
 <div class="banner format-<?=$fileType;?>">
+    <div class="overlay"></div>
     <div class="container-fluid">
     <div class="row">
         <div class="col-xs-12">
             <div class="shield"></div>
             <div class="title"><h1><span>Welcome to</span> Wolf Pack App</h1></div>
+            <div class="subtitle"><p>Don't get lost in the wild without our app - You will thanks us later!</p></div>
         </div>
     </div>
     </div>
@@ -89,7 +91,7 @@ if( strpos( $_SERVER['HTTP_ACCEPT'], 'image/webp' ) !== false ) {
                     <div class="content">
                         <h2>Wolf Fake Fur</h2>
                         <p>We all know the pros of fake fur but do you know the cons. You might attract more alpha wolves! This is going to be an epic journey - Buy now!</p>
-                        <p>Disclaimer: Wear at your own risk - No returns if we see canine rips or blood.</p>
+                        <p class="disclaimer">Disclaimer: Wear at your own risk - No returns if we see canine rips or blood.</p>
                     </div>
                 </div>
             </div>
@@ -98,16 +100,16 @@ if( strpos( $_SERVER['HTTP_ACCEPT'], 'image/webp' ) !== false ) {
     <section class="m3">
         <div class="container-fluid no-padding">
             <div class="row start-xs">
-                <div class="col-xs-6 no-padding m3detail">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 no-padding m3detail">
                     <div class="content">
                         <h2>Wolf Universe available in <abbr title="Augmented Reality">AR</abbr>/<abbr title="Virtual Reality">VR</abbr>/<abbr title="Wolf Reality">WR</abbr></h2>
                         <p>Our Augmented Reality (<abbr title="Augmented Reality">AR</abbr>) glasses will let you see where the wolf droppings are. Entropia Universe would be proud!</p>
                         <p>Our Virtual Reality (<abbr title="Virtual Reality">VR</abbr>) headset is the top of the line with portability in mind. Comes with a mule to carry the equipment! (Food for mule not included)</p>
                         <p>Our Wolf Reality (<abbr title="Wolf Reality">WR</abbr>) brain implants are the latest trend. So far we had no complaints from users. Become a wolf, feel like a wolf and hunt the rabbits with so much ease. (We have a support group for rabbit lovers.)</p>
-                        <p>Disclaimer: Please do not feed the animals. Beside that - you should be fine.</p>
+                        <p class="disclaimer">Disclaimer: Please do not feed the animals. Beside that - you should be fine.</p>
                     </div>
                 </div>
-                <div class="col-xs-6 no-padding m3pic">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 no-padding m3pic">
                     <div class="single simgm1 format-<?=$fileType;?>"></div>
                 </div>
             </div>
@@ -152,6 +154,7 @@ if( strpos( $_SERVER['HTTP_ACCEPT'], 'image/webp' ) !== false ) {
                     <div class="shield"></div>
                 </div>
                 <div class="col-xs-12 col-md-offset-1 col-md-3 no-padding">
+                    <div class="contact-cont">
                     <h3>Contact Us</h3>
                     <address>
                         Wolf Pack Unlimited<br>
@@ -160,8 +163,10 @@ if( strpos( $_SERVER['HTTP_ACCEPT'], 'image/webp' ) !== false ) {
                         United States
                     </address>
                     <p><a href="https://nywolf.org/adopt-a-wolf/" target="_blank">Adopt a Wolf</a></p>
+                    </div>
                 </div>
                 <div class="col-xs-12 col-md-3 no-padding">
+                    <div class="howls-cont">
                     <h3>Recent Howls</h3>
                     <div class="howls">
                         <img src="img/icons8-wolf-64.png" class="howls-icon" alt="Howls">
@@ -176,6 +181,7 @@ if( strpos( $_SERVER['HTTP_ACCEPT'], 'image/webp' ) !== false ) {
                             <p><span class="author">Wolf Quotes</span> said <span class="quotes">Let go of your FEARS and chase after your DREAMS.</span></p>
                             <small>September 28th, 2019</small>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>

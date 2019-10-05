@@ -154,6 +154,15 @@ header {
   .banner.format-webp {
     background: url("../img/jo-jo-Eg5eootTvqM-unsplash.webp") center center no-repeat;
     background-size: cover; }
+  .banner .container-fluid {
+    z-index: 10;
+    position: relative; }
+  .banner .overlay {
+    width: 100%;
+    height: 40em;
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.35); }
   .banner .shield {
     width: 138px;
     height: 116px;
@@ -167,6 +176,15 @@ header {
     text-shadow: 2px 2px 7px rgba(150, 150, 150, 0.78); }
     .banner .title h1 span {
       font-weight: 100; }
+  .banner .subtitle p {
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    text-shadow: 2px 2px 7px rgba(150, 150, 150, 0.78); }
+
+main section .disclaimer {
+  font-weight: 400;
+  font-size: 0.8em; }
 
 main section .container-fluid.no-padding {
   padding: 0; }
@@ -177,7 +195,19 @@ main section .container-fluid .row {
     padding: 0; }
 
 main section.m1 .m1detail .content {
-  padding: 10rem; }
+  padding: 2rem; }
+  @media (min-width: 576px) {
+    main section.m1 .m1detail .content {
+      padding: 2.5rem; } }
+  @media (min-width: 768px) {
+    main section.m1 .m1detail .content {
+      padding: 5rem; } }
+  @media (min-width: 992px) {
+    main section.m1 .m1detail .content {
+      padding: 5rem; } }
+  @media (min-width: 1024px) {
+    main section.m1 .m1detail .content {
+      padding: 10rem; } }
   main section.m1 .m1detail .content h2 {
     text-align: center;
     text-transform: uppercase; }
@@ -206,20 +236,50 @@ main section.m1 .grid2x2 {
     justify-content: center;
     flex-direction: row; }
   main section.m1 .grid2x2 .quad {
-    min-height: 20em;
-    min-width: 50%; }
+    min-height: 13em;
+    min-width: 100%; }
+    @media (min-width: 576px) {
+      main section.m1 .grid2x2 .quad {
+        min-height: 13em;
+        min-width: 100%; } }
+    @media (min-width: 768px) {
+      main section.m1 .grid2x2 .quad {
+        min-height: 13em;
+        min-width: 100%; } }
+    @media (min-width: 992px) {
+      main section.m1 .grid2x2 .quad {
+        min-height: 13em;
+        min-width: 100%; } }
+    @media (min-width: 1024px) {
+      main section.m1 .grid2x2 .quad {
+        min-height: 20em;
+        min-width: 50%; } }
     main section.m1 .grid2x2 .quad.imgm1.format-jpg {
       background: url("../img/marek-szturc-8Ou3EZmTMWA-unsplash.jpg") center center no-repeat;
       background-size: cover; }
     main section.m1 .grid2x2 .quad.imgm1.format-webp {
       background: url("../img/marek-szturc-8Ou3EZmTMWA-unsplash.webp") center center no-repeat;
       background-size: cover; }
-    main section.m1 .grid2x2 .quad.imgm2.format-jpg {
-      background: url("../img/hybrid-HtHrjExpddA-unsplash.jpg") center center no-repeat;
-      background-size: cover; }
-    main section.m1 .grid2x2 .quad.imgm2.format-webp {
-      background: url("../img/hybrid-HtHrjExpddA-unsplash.webp") center center no-repeat;
-      background-size: cover; }
+    main section.m1 .grid2x2 .quad.imgm2 {
+      display: none; }
+      @media (min-width: 576px) {
+        main section.m1 .grid2x2 .quad.imgm2 {
+          display: none; } }
+      @media (min-width: 768px) {
+        main section.m1 .grid2x2 .quad.imgm2 {
+          display: none; } }
+      @media (min-width: 992px) {
+        main section.m1 .grid2x2 .quad.imgm2 {
+          display: block; } }
+      @media (min-width: 1024px) {
+        main section.m1 .grid2x2 .quad.imgm2 {
+          display: block; } }
+      main section.m1 .grid2x2 .quad.imgm2.format-jpg {
+        background: url("../img/hybrid-HtHrjExpddA-unsplash.jpg") center center no-repeat;
+        background-size: cover; }
+      main section.m1 .grid2x2 .quad.imgm2.format-webp {
+        background: url("../img/hybrid-HtHrjExpddA-unsplash.webp") center center no-repeat;
+        background-size: cover; }
     main section.m1 .grid2x2 .quad.imgm3.format-jpg {
       background: url("../img/simon-rae-jY_2XG-6HU0-unsplash.jpg") center center no-repeat;
       background-size: cover; }
@@ -234,7 +294,19 @@ main section.m1 .grid2x2 {
       background-size: cover; }
 
 main section.m2 .m2detail .content {
-  padding: 10rem; }
+  padding: 2rem; }
+  @media (min-width: 576px) {
+    main section.m2 .m2detail .content {
+      padding: 2.5rem; } }
+  @media (min-width: 768px) {
+    main section.m2 .m2detail .content {
+      padding: 5rem; } }
+  @media (min-width: 992px) {
+    main section.m2 .m2detail .content {
+      padding: 5rem; } }
+  @media (min-width: 1024px) {
+    main section.m2 .m2detail .content {
+      padding: 10rem; } }
   main section.m2 .m2detail .content h2 {
     text-align: center;
     text-transform: uppercase; }
@@ -255,7 +327,19 @@ main section.m3 .m3detail {
   background-color: #2a2a2a;
   color: #ffffff; }
   main section.m3 .m3detail .content {
-    padding: 10rem; }
+    padding: 2rem; }
+    @media (min-width: 576px) {
+      main section.m3 .m3detail .content {
+        padding: 2.5rem; } }
+    @media (min-width: 768px) {
+      main section.m3 .m3detail .content {
+        padding: 5rem; } }
+    @media (min-width: 992px) {
+      main section.m3 .m3detail .content {
+        padding: 5rem; } }
+    @media (min-width: 1024px) {
+      main section.m3 .m3detail .content {
+        padding: 10rem; } }
     main section.m3 .m3detail .content h2 {
       text-align: center;
       text-transform: uppercase; }
@@ -264,19 +348,47 @@ main section.m3 .m3pic .single {
   min-height: 100%;
   min-width: 100%; }
 
-main section.m3 .m3pic .simgm1.format-jpg {
-  background: url("../img/eva-blue-e9hbo4NtKJ0-unsplash.jpg") 0 0 no-repeat;
-  background-size: cover; }
-
-main section.m3 .m3pic .simgm1.format-webp {
-  background: url("../img/eva-blue-e9hbo4NtKJ0-unsplash.webp") 0 0 no-repeat;
-  background-size: cover; }
+main section.m3 .m3pic .simgm1 {
+  display: none; }
+  @media (min-width: 576px) {
+    main section.m3 .m3pic .simgm1 {
+      display: none; } }
+  @media (min-width: 768px) {
+    main section.m3 .m3pic .simgm1 {
+      display: block; } }
+  @media (min-width: 992px) {
+    main section.m3 .m3pic .simgm1 {
+      display: block; } }
+  @media (min-width: 1024px) {
+    main section.m3 .m3pic .simgm1 {
+      display: block; } }
+  main section.m3 .m3pic .simgm1.format-jpg {
+    background: url("../img/eva-blue-e9hbo4NtKJ0-unsplash.jpg") 0 0 no-repeat;
+    background-size: cover; }
+  main section.m3 .m3pic .simgm1.format-webp {
+    background: url("../img/eva-blue-e9hbo4NtKJ0-unsplash.webp") 0 0 no-repeat;
+    background-size: cover; }
 
 main section.m4 .m4detail .content {
-  padding: 10rem; }
+  padding: 2rem; }
+  @media (min-width: 576px) {
+    main section.m4 .m4detail .content {
+      padding: 2.5rem; } }
+  @media (min-width: 768px) {
+    main section.m4 .m4detail .content {
+      padding: 5rem; } }
+  @media (min-width: 992px) {
+    main section.m4 .m4detail .content {
+      padding: 5rem; } }
+  @media (min-width: 1024px) {
+    main section.m4 .m4detail .content {
+      padding: 10rem; } }
   main section.m4 .m4detail .content h2 {
     text-align: center;
     text-transform: uppercase; }
+    @media (max-width: 768px) {
+      main section.m4 .m4detail .content h2 {
+        margin-top: 0; } }
   main section.m4 .m4detail .content form .fields {
     padding: 20px 0; }
     main section.m4 .m4detail .content form .fields label {
@@ -300,7 +412,7 @@ main section.m4 .m4detail .content {
         background-color: #eaeaea; }
 
 footer {
-  padding: 10rem 0 4rem 0;
+  padding: 4rem 0;
   background-color: #353535;
   color: #fff; }
   footer .container-fluid.no-padding {
@@ -315,6 +427,18 @@ footer {
     background: url("../img/shield-wolf.png") center center no-repeat;
     background-size: cover;
     margin: 0 auto; }
+  @media (min-width: 576px) {
+    footer {
+      padding: 4rem 0; } }
+  @media (min-width: 768px) {
+    footer {
+      padding: 4rem 0; } }
+  @media (min-width: 992px) {
+    footer {
+      padding: 4rem 0; } }
+  @media (min-width: 1024px) {
+    footer {
+      padding: 10rem 0 4rem 0; } }
   footer hr {
     border: 0;
     height: 1px;
@@ -326,6 +450,50 @@ footer {
   footer a {
     color: #fff;
     text-decoration: none; }
+  @media (min-width: 576px) {
+    footer .contact-cont {
+      text-align: center;
+      margin-top: 2rem; } }
+  @media (min-width: 768px) {
+    footer .contact-cont {
+      text-align: center;
+      margin-top: 4rem; } }
+  @media (min-width: 992px) {
+    footer .contact-cont {
+      text-align: center;
+      margin-top: 4rem; } }
+  @media (min-width: 1024px) {
+    footer .contact-cont {
+      text-align: left;
+      margin-top: 0; } }
+  @media (min-width: 576px) {
+    footer .howls-cont {
+      text-align: left;
+      margin: 2rem 15rem 1rem; } }
+  @media (min-width: 768px) {
+    footer .howls-cont {
+      text-align: left;
+      margin: 4rem 15rem 1rem; } }
+  @media (min-width: 992px) {
+    footer .howls-cont {
+      text-align: left;
+      margin: 4rem 15rem 1rem; } }
+  @media (min-width: 1024px) {
+    footer .howls-cont {
+      text-align: left;
+      margin: 0; } }
+  @media (min-width: 576px) {
+    footer .howls-cont h3 {
+      text-align: center; } }
+  @media (min-width: 768px) {
+    footer .howls-cont h3 {
+      text-align: center; } }
+  @media (min-width: 992px) {
+    footer .howls-cont h3 {
+      text-align: center; } }
+  @media (min-width: 1024px) {
+    footer .howls-cont h3 {
+      text-align: left; } }
   footer address {
     color: #bbbbbb; }
   footer .madeby {
