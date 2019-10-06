@@ -80,6 +80,19 @@ header {
       text-align: center;
       margin-top: 3rem;
       text-shadow: 2px 2px 7px rgba(150, 150, 150, 0.78);
+      font-size: 3em;
+      @media (min-width: #{$screen-sm-min}) {
+        font-size: 3em;
+      }
+      @media (min-width: #{$screen-md-min}) {
+        font-size: 3em;
+      }
+      @media (min-width: #{$screen-lg-min}) {
+        font-size: 2.5em;
+      }
+      @media (min-width: #{$screen-xl-min}) {
+        font-size: 2.5em;
+      }
       span {
         font-weight: 100;
       }
@@ -87,19 +100,28 @@ header {
   }
   .subtitle {
     p {
+      font-size: 1.4em;
       color: #fff;
       text-align: center;
       font-weight: 400;
       text-shadow: 2px 2px 7px rgba(150, 150, 150, 0.78);
+      @media (min-width: #{$screen-sm-min}) {
+        font-size: 1.8em;
+      }
+      @media (min-width: #{$screen-md-min}) {
+        font-size: 1.8em;
+      }
+      @media (min-width: #{$screen-lg-min}) {
+        font-size: 1.3em;
+      }
+      @media (min-width: #{$screen-xl-min}) {
+        font-size: 1.3em;
+      }
     }
   }
 }
 main {
   section {
-    .disclaimer {
-      font-weight: 400;
-      font-size: 0.8em;
-    }
     .container-fluid {
       &.no-padding {
         padding: 0;
@@ -130,6 +152,21 @@ main {
           h2 {
             text-align: center;
             text-transform: uppercase;
+          }
+          p {
+            font-size: 1.2em;
+            @media (min-width: #{$screen-sm-min}) {
+              font-size: 1.8em;
+            }
+            @media (min-width: #{$screen-md-min}) {
+              font-size: 1.8em;
+            }
+            @media (min-width: #{$screen-lg-min}) {
+              font-size: 1.2em;
+            }
+            @media (min-width: #{$screen-xl-min}) {
+              font-size: 1.2em;
+            }
           }
           .phone {
             height: 19em;
@@ -252,6 +289,37 @@ main {
           @media (min-width: #{$screen-xl-min}) {
             padding: 10rem;
           }
+          p {
+            font-size: 1.2em;
+            @media (min-width: #{$screen-sm-min}) {
+              font-size: 1.8em;
+            }
+            @media (min-width: #{$screen-md-min}) {
+              font-size: 1.8em;
+            }
+            @media (min-width: #{$screen-lg-min}) {
+              font-size: 1.2em;
+            }
+            @media (min-width: #{$screen-xl-min}) {
+              font-size: 1.2em;
+            }
+            &.disclaimer {
+              font-weight: 400;
+              font-size: 0.8em;
+              @media (min-width: #{$screen-sm-min}) {
+                font-size: 1em;
+              }
+              @media (min-width: #{$screen-md-min}) {
+                font-size: 1em;
+              }
+              @media (min-width: #{$screen-lg-min}) {
+                font-size: 0.8em;
+              }
+              @media (min-width: #{$screen-xl-min}) {
+                font-size: 0.8em;
+              }
+            }
+          }
           h2 {
             text-align: center;
             text-transform: uppercase;
@@ -292,6 +360,37 @@ main {
           }
           @media (min-width: #{$screen-xl-min}) {
             padding: 10rem;
+          }
+          p {
+            font-size: 1.2em;
+            @media (min-width: #{$screen-sm-min}) {
+              font-size: 1.8em;
+            }
+            @media (min-width: #{$screen-md-min}) {
+              font-size: 1.8em;
+            }
+            @media (min-width: #{$screen-lg-min}) {
+              font-size: 1.2em;
+            }
+            @media (min-width: #{$screen-xl-min}) {
+              font-size: 1.2em;
+            }
+            &.disclaimer {
+              font-weight: 400;
+              font-size: 0.8em;
+              @media (min-width: #{$screen-sm-min}) {
+                font-size: 1em;
+              }
+              @media (min-width: #{$screen-md-min}) {
+                font-size: 1em;
+              }
+              @media (min-width: #{$screen-lg-min}) {
+                font-size: 0.8em;
+              }
+              @media (min-width: #{$screen-xl-min}) {
+                font-size: 0.8em;
+              }
+            }
           }
           h2 {
             text-align: center;
@@ -487,18 +586,60 @@ footer {
   }
   address {
     color: #bbbbbb;
+    font-size: 1.1em;
+    @media (min-width: #{$screen-sm-min}) {
+      font-size: 1.1em;
+    }
+    @media (min-width: #{$screen-md-min}) {
+      font-size: 1.1em;
+    }
+    @media (min-width: #{$screen-lg-min}) {
+      font-size: 1em;
+    }
+    @media (min-width: #{$screen-xl-min}) {
+      font-size: 1em;
+    }
   }
   .madeby {
     text-align: center;
-    .smaller {
-      font-size: 0.7em;
+
+    .primary {
+      a {
+        font-weight: 100;
+        font-size: 1.1em;
+        @media (min-width: #{$screen-sm-min}) {
+          font-size: 1.1em;
+        }
+        @media (min-width: #{$screen-md-min}) {
+          font-size: 1.1em;
+        }
+        @media (min-width: #{$screen-lg-min}) {
+          font-size: 1em;
+        }
+        @media (min-width: #{$screen-xl-min}) {
+          font-size: 1em;
+        }
+      }
     }
     .secondary {
       margin-top: 12px;
       color: rgba(255, 255, 255, 0.50);
-    }
-    a {
-      font-weight: 100;
+      a {
+        font-weight: 100;
+        font-size: 0.9em;
+        @media (min-width: #{$screen-sm-min}) {
+          font-size: 0.9em;
+        }
+        @media (min-width: #{$screen-md-min}) {
+          font-size: 0.9em;
+        }
+        @media (min-width: #{$screen-lg-min}) {
+          font-size: 0.9em;
+        }
+        @media (min-width: #{$screen-xl-min}) {
+          font-size: 0.8em;
+        }
+      }
     }
   }
   .howls {
@@ -518,6 +659,19 @@ footer {
       color: #888;
       p {
         margin-bottom: 0.4em;
+        font-size: 1.4em;
+        @media (min-width: #{$screen-sm-min}) {
+          font-size: 1.4em;
+        }
+        @media (min-width: #{$screen-md-min}) {
+          font-size: 1.4em;
+        }
+        @media (min-width: #{$screen-lg-min}) {
+          font-size: 1.2em;
+        }
+        @media (min-width: #{$screen-xl-min}) {
+          font-size: 1.2em;
+        }
       }
       .author {
         color: #888;

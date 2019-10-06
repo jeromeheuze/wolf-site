@@ -9,11 +9,12 @@ if( strpos( $_SERVER['HTTP_ACCEPT'], 'image/webp' ) !== false ) {
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>All About Wolves!</title>
     <link href="https://www.jeromeheuze.com/wolf-site/css/flexboxgrid.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,400,700&display=swap" rel="stylesheet">
     <!--<link href="https://www.jeromeheuze.com/wolf-site/css/main.min.css" rel="stylesheet">-->
-    <link href="styles/main.css" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="https://www.jeromeheuze.com/wolf-site/img/icons8-wolf-100.png">
 </head>
 <body>
@@ -162,7 +163,7 @@ if( strpos( $_SERVER['HTTP_ACCEPT'], 'image/webp' ) !== false ) {
                         Canis Lupus, LC 17408<br>
                         United States
                     </address>
-                    <p><a href="https://nywolf.org/adopt-a-wolf/" target="_blank">Adopt a Wolf</a></p>
+                    <p><a href="https://nywolf.org/adopt-a-wolf/" target="_blank" rel="noopener">Adopt a Wolf</a></p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-3 no-padding">
@@ -188,9 +189,9 @@ if( strpos( $_SERVER['HTTP_ACCEPT'], 'image/webp' ) !== false ) {
             <hr>
             <div class="row madeby">
                 <div class="col-xs-12 no-padding">
-                    <a href="https://heuzeproductions.com/" target="_blank">Made By Heuze Productions</a>
+                    <div class="primary"><a href="https://heuzeproductions.com/" target="_blank" rel="noopener">Made By Heuze Productions</a></div>
                     <div class="secondary">
-                        <a href="https://icons8.com/" target="_blank" class="smaller">Icons credit</a>&nbsp;-&nbsp;<a href="https://unsplash.com/" target="_blank" class="smaller">Photographs credit</a>
+                        <a href="https://icons8.com/" target="_blank" rel="noopener">Icons credit</a>&nbsp;-&nbsp;<a href="https://unsplash.com/" target="_blank" rel="noopener">Photographs credit</a>
                     </div>
                 </div>
             </div>
