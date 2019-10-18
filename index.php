@@ -11,10 +11,11 @@ if( strpos( $_SERVER['HTTP_ACCEPT'], 'image/webp' ) !== false ) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>All About Wolves!</title>
+    <meta name="description" content="Everything you wanted to know about Wolves and you were too scared to ask.">
     <link href="https://www.jeromeheuze.com/wolf-site/css/flexboxgrid.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,400,700&display=swap" rel="stylesheet">
-    <!--<link href="https://www.jeromeheuze.com/wolf-site/css/main.min.css" rel="stylesheet">-->
-    <link href="css/main.min.css" rel="stylesheet">
+    <link href="/wolf-site/css/main.min.css" rel="stylesheet">
+    <!--<link href="styles/main.css" rel="stylesheet">-->
     <link rel="icon" type="image/png" href="https://www.jeromeheuze.com/wolf-site/img/icons8-wolf-100.png">
 </head>
 <body>
@@ -65,7 +66,7 @@ if( strpos( $_SERVER['HTTP_ACCEPT'], 'image/webp' ) !== false ) {
     <section class="m1">
         <div class="container-fluid no-padding">
         <div class="row start-xs">
-            <div class="col-xs-6 no-padding m1detail">
+            <div class="col-xs-12 col-sm-6 no-padding m1detail">
                 <div class="content">
                     <div class="phone format-<?=$fileType;?>"></div>
                     <h2>Wolf Pack App</h2>
@@ -73,7 +74,7 @@ if( strpos( $_SERVER['HTTP_ACCEPT'], 'image/webp' ) !== false ) {
                     <p>Discover the nearest wolf pack from your house, order online wolf scent, read the latest news about making a wolf pet and survive.</p>
                 </div>
             </div>
-            <div class="col-xs-6 no-padding grid2x2">
+            <div class="col-xs-12 col-sm-6 no-padding grid2x2">
                 <div class="quad imgm1 format-<?=$fileType;?>"></div>
                 <div class="quad imgm2 format-<?=$fileType;?>"></div>
                 <div class="quad imgm3 format-<?=$fileType;?>"></div>
@@ -85,10 +86,10 @@ if( strpos( $_SERVER['HTTP_ACCEPT'], 'image/webp' ) !== false ) {
     <section class="m2">
         <div class="container-fluid no-padding">
             <div class="row start-xs">
-                <div class="col-xs-6 no-padding m2pic">
+                <div class="col-xs-12 col-sm-6 no-padding m2pic">
                     <div class="single simgm1 format-<?=$fileType;?>"></div>
                 </div>
-                <div class="col-xs-6 no-padding m2detail">
+                <div class="col-xs-12 col-sm-6 no-padding m2detail">
                     <div class="content">
                         <h2>Wolf Fake Fur</h2>
                         <p>We all know the pros of fake fur but do you know the cons. You might attract more alpha wolves! This is going to be an epic journey - Buy now!</p>

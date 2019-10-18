@@ -31,8 +31,20 @@ header {
           color: #fff;
           text-decoration: none;
           font-size: 1em;
-          @media screen and (min-width: 414px) {
+          @media (min-width: #{$screen-xs-min}) {
             font-size: 0.8em;
+          }
+          @media (min-width: #{$screen-sm-min}) {
+            font-size: 0.8em;
+          }
+          @media (min-width: #{$screen-md-min}) {
+            font-size: 1em;
+          }
+          @media (min-width: #{$screen-lg-min}) {
+            font-size: 1em;
+          }
+          @media (min-width: #{$screen-xl-min}) {
+            font-size: 1em;
           }
         }
       }
@@ -41,11 +53,31 @@ header {
   .logo {
     margin: 0 auto;
     max-height: 60px;
+    @media (max-width: #{$screen-sm-min}) {
+      max-width: 40px;
+      max-height: 40px;
+      margin-top: 10px;
+    }
   }
 }
 .banner {
   width: 100%;
   height: 40em;
+  @media (min-width: #{$screen-xs-min}) {
+    height: 30em;
+  }
+  @media (min-width: #{$screen-sm-min}) {
+    height: 30em;
+  }
+  @media (min-width: #{$screen-md-min}) {
+    height: 40em;
+  }
+  @media (min-width: #{$screen-lg-min}) {
+    height: 40em;
+  }
+  @media (min-width: #{$screen-xl-min}) {
+    height: 40em;
+  }
   &.format-jpg {
     background: url("../img/jo-jo-Eg5eootTvqM-unsplash.jpg") center center no-repeat;
     background-size: cover;
@@ -64,6 +96,21 @@ header {
     z-index: 1;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.35);
+    @media (min-width: #{$screen-xs-min}) {
+      height: 30em;
+    }
+    @media (min-width: #{$screen-sm-min}) {
+      height: 30em;
+    }
+    @media (min-width: #{$screen-md-min}) {
+      height: 40em;
+    }
+    @media (min-width: #{$screen-lg-min}) {
+      height: 40em;
+    }
+    @media (min-width: #{$screen-xl-min}) {
+      height: 40em;
+    }
   }
 
   .shield {
@@ -81,6 +128,9 @@ header {
       margin-top: 3rem;
       text-shadow: 2px 2px 7px rgba(150, 150, 150, 0.78);
       font-size: 3em;
+      @media (min-width: #{$screen-xs-min}) {
+        font-size: 2em;
+      }
       @media (min-width: #{$screen-sm-min}) {
         font-size: 3em;
       }
@@ -105,6 +155,9 @@ header {
       text-align: center;
       font-weight: 400;
       text-shadow: 2px 2px 7px rgba(150, 150, 150, 0.78);
+      @media (min-width: #{$screen-xs-min}) {
+        font-size: 1.2em;
+      }
       @media (min-width: #{$screen-sm-min}) {
         font-size: 1.8em;
       }
@@ -201,9 +254,15 @@ main {
         .quad {
           min-height: 13em;
           min-width: 100%;
+          @media (min-width: #{$screen-xs-min}) {
+            min-height: 13em;
+            min-width: 0;
+            max-width: 33.33333%;
+          }
           @media (min-width: #{$screen-sm-min}) {
             min-height: 13em;
-            min-width: 100%;
+            min-width: 0;
+            max-width: 33.33333%;
           }
           @media (min-width: #{$screen-md-min}) {
             min-height: 13em;
@@ -229,6 +288,9 @@ main {
           }
           &.imgm2 {
             display: none;
+            @media (min-width: #{$screen-xs-min}) {
+              display: none;
+            }
             @media (min-width: #{$screen-sm-min}) {
               display: none;
             }
@@ -535,6 +597,10 @@ footer {
     text-decoration: none;
   }
   .contact-cont {
+    @media (min-width: #{$screen-xs-min}) {
+      text-align: center;
+      margin-top: 2rem;
+    }
     @media (min-width: #{$screen-sm-min}) {
       text-align: center;
       margin-top: 2rem;
@@ -553,6 +619,10 @@ footer {
     }
   }
   .howls-cont {
+    @media (min-width: #{$screen-xs-min}) {
+      text-align: left;
+      margin: 2rem 5rem 1rem;
+    }
     @media (min-width: #{$screen-sm-min}) {
       text-align: left;
       margin: 2rem 15rem 1rem;
@@ -570,6 +640,9 @@ footer {
       margin: 0;
     }
     h3 {
+      @media (min-width: #{$screen-xs-min}) {
+        text-align: center;
+      }
       @media (min-width: #{$screen-sm-min}) {
         text-align: center;
       }
@@ -660,6 +733,9 @@ footer {
       p {
         margin-bottom: 0.4em;
         font-size: 1.4em;
+        @media (min-width: #{$screen-xs-min}) {
+          font-size: 1.1em;
+        }
         @media (min-width: #{$screen-sm-min}) {
           font-size: 1.4em;
         }
