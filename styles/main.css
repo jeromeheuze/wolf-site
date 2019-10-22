@@ -181,10 +181,10 @@ header {
     .banner {
       height: 40em; } }
   .banner.format-jpg {
-    background: url("../img/jo-jo-Eg5eootTvqM-unsplash.jpg") center center no-repeat;
+    background: url("/portfolio/wolf-site/img/jo-jo-Eg5eootTvqM-unsplash.jpg") center center no-repeat;
     background-size: cover; }
   .banner.format-webp {
-    background: url("../img/jo-jo-Eg5eootTvqM-unsplash.webp") center center no-repeat;
+    background: url("/portfolio/wolf-site/img/jo-jo-Eg5eootTvqM-unsplash.webp") center center no-repeat;
     background-size: cover; }
   .banner .container-fluid {
     z-index: 10;
@@ -213,7 +213,7 @@ header {
   .banner .shield {
     width: 138px;
     height: 116px;
-    background: url("../img/shield-wolf.png") center center no-repeat;
+    background: url("/portfolio/wolf-site/img/shield-wolf.png") center center no-repeat;
     background-size: cover;
     margin: 20px auto; }
   .banner .title h1 {
@@ -304,10 +304,10 @@ main section.m1 .m1detail .content {
     height: 19em;
     width: 100%; }
     main section.m1 .m1detail .content .phone.format-jpg {
-      background: url("../img/iphone_iphonexspacegrey_portrait.png") center center no-repeat;
+      background: url("/portfolio/wolf-site/img/iphone_iphonexspacegrey_portrait.png") center center no-repeat;
       background-size: contain; }
     main section.m1 .m1detail .content .phone.format-webp {
-      background: url("../img/iphone_iphonexspacegrey_portrait.webp") center center no-repeat;
+      background: url("/portfolio/wolf-site/img/iphone_iphonexspacegrey_portrait.webp") center center no-repeat;
       background-size: contain; }
 
 main section.m1 .grid2x2 {
@@ -350,10 +350,10 @@ main section.m1 .grid2x2 {
         min-height: 20em;
         min-width: 50%; } }
     main section.m1 .grid2x2 .quad.imgm1.format-jpg {
-      background: url("../img/marek-szturc-8Ou3EZmTMWA-unsplash.jpg") center center no-repeat;
+      background: url("/portfolio/wolf-site/img/marek-szturc-8Ou3EZmTMWA-unsplash.jpg") center center no-repeat;
       background-size: cover; }
     main section.m1 .grid2x2 .quad.imgm1.format-webp {
-      background: url("../img/marek-szturc-8Ou3EZmTMWA-unsplash.webp") center center no-repeat;
+      background: url("/portfolio/wolf-site/img/marek-szturc-8Ou3EZmTMWA-unsplash.webp") center center no-repeat;
       background-size: cover; }
     main section.m1 .grid2x2 .quad.imgm2 {
       display: none; }
@@ -373,22 +373,22 @@ main section.m1 .grid2x2 {
         main section.m1 .grid2x2 .quad.imgm2 {
           display: block; } }
       main section.m1 .grid2x2 .quad.imgm2.format-jpg {
-        background: url("../img/hybrid-HtHrjExpddA-unsplash.jpg") center center no-repeat;
+        background: url("/portfolio/wolf-site/img/hybrid-HtHrjExpddA-unsplash.jpg") center center no-repeat;
         background-size: cover; }
       main section.m1 .grid2x2 .quad.imgm2.format-webp {
-        background: url("../img/hybrid-HtHrjExpddA-unsplash.webp") center center no-repeat;
+        background: url("/portfolio/wolf-site/img/hybrid-HtHrjExpddA-unsplash.webp") center center no-repeat;
         background-size: cover; }
     main section.m1 .grid2x2 .quad.imgm3.format-jpg {
-      background: url("../img/simon-rae-jY_2XG-6HU0-unsplash.jpg") center center no-repeat;
+      background: url("/portfolio/wolf-site/img/simon-rae-jY_2XG-6HU0-unsplash.jpg") center center no-repeat;
       background-size: cover; }
     main section.m1 .grid2x2 .quad.imgm3.format-webp {
-      background: url("../img/simon-rae-jY_2XG-6HU0-unsplash.webp") center center no-repeat;
+      background: url("/portfolio/wolf-site/img/simon-rae-jY_2XG-6HU0-unsplash.webp") center center no-repeat;
       background-size: cover; }
     main section.m1 .grid2x2 .quad.imgm4.format-jpg {
-      background: url("../img/aron-visuals-4zxSWESyZio-unsplash.jpg") center center no-repeat;
+      background: url("/portfolio/wolf-site/img/aron-visuals-4zxSWESyZio-unsplash.jpg") center center no-repeat;
       background-size: cover; }
     main section.m1 .grid2x2 .quad.imgm4.format-webp {
-      background: url("../img/aron-visuals-4zxSWESyZio-unsplash.webp") center center no-repeat;
+      background: url("/portfolio/wolf-site/img/aron-visuals-4zxSWESyZio-unsplash.webp") center center no-repeat;
       background-size: cover; }
 
 main section.m2 .m2detail .content {
@@ -443,11 +443,11 @@ main section.m2 .m2pic .single {
   min-width: 100%; }
 
 main section.m2 .m2pic .simgm1.format-jpg {
-  background: url("../img/alina-lobanova-TjMt-AdMMIM-unsplash.jpg") center center no-repeat;
+  background: url("/portfolio/wolf-site/img/alina-lobanova-TjMt-AdMMIM-unsplash.jpg") center center no-repeat;
   background-size: cover; }
 
 main section.m2 .m2pic .simgm1.format-webp {
-  background: url("../img/alina-lobanova-TjMt-AdMMIM-unsplash.webp") center center no-repeat;
+  background: url("/portfolio/wolf-site/img/alina-lobanova-TjMt-AdMMIM-unsplash.webp") center center no-repeat;
   background-size: cover; }
 
 main section.m3 .m3detail {
@@ -519,10 +519,10 @@ main section.m3 .m3pic .simgm1 {
     main section.m3 .m3pic .simgm1 {
       display: block; } }
   main section.m3 .m3pic .simgm1.format-jpg {
-    background: url("../img/eva-blue-e9hbo4NtKJ0-unsplash.jpg") 0 0 no-repeat;
+    background: url("/portfolio/wolf-site/img/eva-blue-e9hbo4NtKJ0-unsplash.jpg") 0 0 no-repeat;
     background-size: cover; }
   main section.m3 .m3pic .simgm1.format-webp {
-    background: url("../img/eva-blue-e9hbo4NtKJ0-unsplash.webp") 0 0 no-repeat;
+    background: url("/portfolio/wolf-site/img/eva-blue-e9hbo4NtKJ0-unsplash.webp") 0 0 no-repeat;
     background-size: cover; }
 
 main section.m4 .m4detail .content {
@@ -580,7 +580,7 @@ footer {
   footer .shield {
     width: 138px;
     height: 116px;
-    background: url("../img/shield-wolf.png") center center no-repeat;
+    background: url("/portfolio/wolf-site/img/shield-wolf.png") center center no-repeat;
     background-size: cover;
     margin: 0 auto; }
   @media (min-width: 576px) {

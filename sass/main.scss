@@ -1,5 +1,6 @@
 @import "mediaqueries";
 @import "resetform";
+$imgPath: "/portfolio/wolf-site/img/";
 * {
   box-sizing: border-box;
 }
@@ -79,11 +80,11 @@ header {
     height: 40em;
   }
   &.format-jpg {
-    background: url("../img/jo-jo-Eg5eootTvqM-unsplash.jpg") center center no-repeat;
+    background: url("#{$imgPath}jo-jo-Eg5eootTvqM-unsplash.jpg") center center no-repeat;
     background-size: cover;
   }
   &.format-webp {
-    background: url("../img/jo-jo-Eg5eootTvqM-unsplash.webp") center center no-repeat;
+    background: url("#{$imgPath}jo-jo-Eg5eootTvqM-unsplash.webp") center center no-repeat;
     background-size: cover;
   }
   .container-fluid {
@@ -116,7 +117,7 @@ header {
   .shield {
     width: 138px;
     height: 116px;
-    background: url("../img/shield-wolf.png") center center no-repeat;
+    background: url("#{$imgPath}shield-wolf.png") center center no-repeat;
     background-size: cover;
     margin: 20px auto;
   }
@@ -225,11 +226,11 @@ main {
             height: 19em;
             width: 100%;
             &.format-jpg {
-              background: url("../img/iphone_iphonexspacegrey_portrait.png") center center no-repeat;
+              background: url("#{$imgPath}iphone_iphonexspacegrey_portrait.png") center center no-repeat;
               background-size: contain;
             }
             &.format-webp {
-              background: url("../img/iphone_iphonexspacegrey_portrait.webp") center center no-repeat;
+              background: url("#{$imgPath}iphone_iphonexspacegrey_portrait.webp") center center no-repeat;
               background-size: contain;
             }
           }
@@ -278,11 +279,11 @@ main {
           }
           &.imgm1 {
             &.format-jpg {
-              background: url("../img/marek-szturc-8Ou3EZmTMWA-unsplash.jpg") center center no-repeat;
+              background: url("#{$imgPath}marek-szturc-8Ou3EZmTMWA-unsplash.jpg") center center no-repeat;
               background-size: cover;
             }
             &.format-webp {
-              background: url("../img/marek-szturc-8Ou3EZmTMWA-unsplash.webp") center center no-repeat;
+              background: url("#{$imgPath}marek-szturc-8Ou3EZmTMWA-unsplash.webp") center center no-repeat;
               background-size: cover;
             }
           }
@@ -304,31 +305,31 @@ main {
               display: block;
             }
             &.format-jpg {
-              background: url("../img/hybrid-HtHrjExpddA-unsplash.jpg") center center no-repeat;
+              background: url("#{$imgPath}hybrid-HtHrjExpddA-unsplash.jpg") center center no-repeat;
               background-size: cover;
             }
             &.format-webp {
-              background: url("../img/hybrid-HtHrjExpddA-unsplash.webp") center center no-repeat;
+              background: url("#{$imgPath}hybrid-HtHrjExpddA-unsplash.webp") center center no-repeat;
               background-size: cover;
             }
           }
           &.imgm3 {
             &.format-jpg {
-              background: url("../img/simon-rae-jY_2XG-6HU0-unsplash.jpg") center center no-repeat;
+              background: url("#{$imgPath}simon-rae-jY_2XG-6HU0-unsplash.jpg") center center no-repeat;
               background-size: cover;
             }
             &.format-webp {
-              background: url("../img/simon-rae-jY_2XG-6HU0-unsplash.webp") center center no-repeat;
+              background: url("#{$imgPath}simon-rae-jY_2XG-6HU0-unsplash.webp") center center no-repeat;
               background-size: cover;
             }
           }
           &.imgm4 {
             &.format-jpg {
-              background: url("../img/aron-visuals-4zxSWESyZio-unsplash.jpg") center center no-repeat;
+              background: url("#{$imgPath}aron-visuals-4zxSWESyZio-unsplash.jpg") center center no-repeat;
               background-size: cover;
             }
             &.format-webp {
-              background: url("../img/aron-visuals-4zxSWESyZio-unsplash.webp") center center no-repeat;
+              background: url("#{$imgPath}aron-visuals-4zxSWESyZio-unsplash.webp") center center no-repeat;
               background-size: cover;
             }
           }
@@ -395,11 +396,11 @@ main {
         }
         .simgm1 {
           &.format-jpg {
-            background: url("../img/alina-lobanova-TjMt-AdMMIM-unsplash.jpg") center center no-repeat;
+            background: url("#{$imgPath}alina-lobanova-TjMt-AdMMIM-unsplash.jpg") center center no-repeat;
             background-size: cover;
           }
           &.format-webp {
-            background: url("../img/alina-lobanova-TjMt-AdMMIM-unsplash.webp") center center no-repeat;
+            background: url("#{$imgPath}alina-lobanova-TjMt-AdMMIM-unsplash.webp") center center no-repeat;
             background-size: cover;
           }
         }
@@ -480,11 +481,11 @@ main {
             display: block;
           }
           &.format-jpg {
-            background: url("../img/eva-blue-e9hbo4NtKJ0-unsplash.jpg") 0 0 no-repeat;
+            background: url("#{$imgPath}eva-blue-e9hbo4NtKJ0-unsplash.jpg") 0 0 no-repeat;
             background-size: cover;
           }
           &.format-webp {
-            background: url("../img/eva-blue-e9hbo4NtKJ0-unsplash.webp") 0 0 no-repeat;
+            background: url("#{$imgPath}eva-blue-e9hbo4NtKJ0-unsplash.webp") 0 0 no-repeat;
             background-size: cover;
           }
         }
@@ -563,7 +564,7 @@ footer {
   .shield {
     width: 138px;
     height: 116px;
-    background: url("../img/shield-wolf.png") center center no-repeat;
+    background: url("#{$imgPath}shield-wolf.png") center center no-repeat;
     background-size: cover;
     margin: 0 auto;
   }

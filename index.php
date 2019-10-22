@@ -12,11 +12,11 @@ if( strpos( $_SERVER['HTTP_ACCEPT'], 'image/webp' ) !== false ) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>All About Wolves!</title>
     <meta name="description" content="Everything you wanted to know about Wolves and you were too scared to ask.">
-    <link href="https://www.jeromeheuze.com/wolf-site/css/flexboxgrid.min.css" rel="stylesheet">
+    <link href="/portfolio/wolf-site/css/flexboxgrid.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,400,700&display=swap" rel="stylesheet">
-    <link href="/wolf-site/css/main.min.css" rel="stylesheet">
+    <link href="/portfolio/wolf-site/css/main.min.css" rel="stylesheet">
     <!--<link href="styles/main.css" rel="stylesheet">-->
-    <link rel="icon" type="image/png" href="https://www.jeromeheuze.com/wolf-site/img/icons8-wolf-100.png">
+    <link rel="icon" type="image/png" href="/portfolio/wolf-site/img/icons8-wolf-100.png">
 </head>
 <body>
 <header>
@@ -34,7 +34,7 @@ if( strpos( $_SERVER['HTTP_ACCEPT'], 'image/webp' ) !== false ) {
                 </div>
             </div>
             <div class="col-xs-2">
-                <div class="box"><img src="img/icons8-wolf-64.png" class="logo" alt="Wolf"></div>
+                <div class="box"><img src="/portfolio/wolf-site/img/icons8-wolf-64.png" class="logo" alt="Wolf"></div>
             </div>
             <div class="col-xs-5">
                 <div class="box">
@@ -171,14 +171,14 @@ if( strpos( $_SERVER['HTTP_ACCEPT'], 'image/webp' ) !== false ) {
                     <div class="howls-cont">
                     <h3>Recent Howls</h3>
                     <div class="howls">
-                        <img src="img/icons8-wolf-64.png" class="howls-icon" alt="Howls">
+                        <img src="/portfolio/wolf-site/img/icons8-wolf-64.png" class="howls-icon" alt="Howls">
                         <div class="howls-content">
                             <p><span class="author">Lone Wolf</span> said <span class="quotes">Don't lower your expectations to fit into the world, you were born to stand out.</span></p>
                             <small>September 29th, 2019</small>
                         </div>
                     </div>
                     <div class="howls">
-                        <img src="img/icons8-wolf-64.png" class="howls-icon" alt="Howls">
+                        <img src="/portfolio/wolf-site/img/icons8-wolf-64.png" class="howls-icon" alt="Howls">
                         <div class="howls-content">
                             <p><span class="author">Wolf Quotes</span> said <span class="quotes">Let go of your FEARS and chase after your DREAMS.</span></p>
                             <small>September 28th, 2019</small>
